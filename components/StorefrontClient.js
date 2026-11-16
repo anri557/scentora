@@ -353,8 +353,8 @@ export default function StorefrontClient() {
             <Image
               src="/scentora-logo-header.jpeg"
               alt="SCENTORA — Whispering Aromas"
-              width={180}
-              height={40}
+              width={143}
+              height={32}
               priority
               className="brand-logo-img"
             />

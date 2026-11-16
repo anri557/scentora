@@ -238,10 +238,6 @@ a {
     padding: 0.35rem;
   }
 
-  .brand-logo-img {
-    height: 50px !important;
-  }
-
   .header-actions {
     gap: 0.35rem;
   }
@@ -307,11 +303,10 @@ a {
   align-items: center;
   justify-content: center;
   justify-self: center;
-  margin-top: 10px;
 }
 
 .brand-logo-img {
-  height: 50px;
+  height: clamp(24px, 3.2vw, 34px);
   width: auto;
   object-fit: contain;
   mix-blend-mode: multiply;
