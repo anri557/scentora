@@ -805,10 +805,6 @@ export default function StorefrontClient() {
             <div>
               <div className="footer-brand-name">{STORE_CONFIG.brandName}</div>
               <div className="footer-tagline">{STORE_CONFIG.tagline}</div>
-              <p className="footer-copy">
-                Curated perfumes, colognes, and unisex extraits. Designed with
-                restraint, bottled for permanence.
-              </p>
             </div>
 
             <div>
