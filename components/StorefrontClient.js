@@ -414,7 +414,7 @@ export default function StorefrontClient() {
                   onClick={() =>
                     setActiveModal({
                       product: signatureFragrance,
-                      size: "50ml",
+                      size: "5ml",
                     })
                   }
                 >
@@ -424,8 +424,8 @@ export default function StorefrontClient() {
 
               <div className="hero-metrics">
                 <div>
-                  <div className="metric-value">24–30%</div>
-                  <div className="metric-label">Extrait Concentration</div>
+                  <div className="metric-value">3 / 5 / 10ml</div>
+                  <div className="metric-label">Decant Options</div>
                 </div>
                 <div>
                   <div className="metric-value">100%</div>
@@ -445,7 +445,7 @@ export default function StorefrontClient() {
                 onClick={() =>
                   setActiveModal({
                     product: signatureFragrance,
-                    size: "50ml",
+                    size: "5ml",
                   })
                 }
               >
@@ -754,25 +754,15 @@ export default function StorefrontClient() {
               <div className="pillar-card">
                 <span className="pillar-num">01</span>
                 <div>
-                  <h3>High-Oil Concentration</h3>
+                  <h3>Three Decant Sizes</h3>
                   <p>
-                    From airy Eau de Cologne to rich 30% Extrait de Parfum,
-                    crafted for lasting presence from morning to midnight.
+                    Available in 3ml, 5ml, and 10ml atomizers — experience
+                    authentic designer and niche scents by the milliliter.
                   </p>
                 </div>
               </div>
               <div className="pillar-card">
                 <span className="pillar-num">02</span>
-                <div>
-                  <h3>Three Architectural Sizes</h3>
-                  <p>
-                    Available in 30ml travel flacons, 50ml daily signatures, and
-                    100ml collector bottles.
-                  </p>
-                </div>
-              </div>
-              <div className="pillar-card">
-                <span className="pillar-num">03</span>
                 <div>
                   <h3>Personal Concierge Ordering</h3>
                   <p>

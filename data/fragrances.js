@@ -17,7 +17,7 @@ export const STORE_CONFIG = {
 };
 
 export const CATEGORIES = ["All", "Male", "Female", "Unisex"];
-export const BOTTLE_SIZES = ["All", "30ml", "50ml", "100ml"];
+export const BOTTLE_SIZES = ["All", "3ml", "5ml", "10ml"];
 
 export const FRAGRANCES = [
   {
@@ -40,9 +40,9 @@ export const FRAGRANCES = [
     occasion: "Evening & All-Season",
     image: "/products/bottle-amber.jpg",
     variants: [
-      { size: "30ml", price: 145 },
-      { size: "50ml", price: 215 },
-      { size: "100ml", price: 320 },
+      { size: "3ml", price: 145 },
+      { size: "5ml", price: 215 },
+      { size: "10ml", price: 320 },
     ],
   },
   {
@@ -65,9 +65,9 @@ export const FRAGRANCES = [
     occasion: "Daytime & Warm Weather",
     image: "/products/bottle-cologne.jpg",
     variants: [
-      { size: "30ml", price: 115 },
-      { size: "50ml", price: 175 },
-      { size: "100ml", price: 265 },
+      { size: "3ml", price: 115 },
+      { size: "5ml", price: 175 },
+      { size: "10ml", price: 265 },
     ],
   },
   {
@@ -90,9 +90,9 @@ export const FRAGRANCES = [
     occasion: "Day to Evening",
     image: "/products/bottle-floral.jpg",
     variants: [
-      { size: "30ml", price: 135 },
-      { size: "50ml", price: 195 },
-      { size: "100ml", price: 295 },
+      { size: "3ml", price: 135 },
+      { size: "5ml", price: 195 },
+      { size: "10ml", price: 295 },
     ],
   },
   {
@@ -115,9 +115,9 @@ export const FRAGRANCES = [
     occasion: "Evening & Special Occasions",
     image: "/products/bottle-smoked.jpg",
     variants: [
-      { size: "30ml", price: 170 },
-      { size: "50ml", price: 255 },
-      { size: "100ml", price: 380 },
+      { size: "3ml", price: 170 },
+      { size: "5ml", price: 255 },
+      { size: "10ml", price: 380 },
     ],
   },
   {
@@ -140,9 +140,9 @@ export const FRAGRANCES = [
     occasion: "Autumn & Winter Evenings",
     image: "/products/bottle-amber.jpg",
     variants: [
-      { size: "30ml", price: 140 },
-      { size: "50ml", price: 205 },
-      { size: "100ml", price: 310 },
+      { size: "3ml", price: 140 },
+      { size: "5ml", price: 205 },
+      { size: "10ml", price: 310 },
     ],
   },
   {
@@ -164,9 +164,9 @@ export const FRAGRANCES = [
     occasion: "Office & Daily Signature",
     image: "/products/bottle-cologne.jpg",
     variants: [
-      { size: "30ml", price: 120 },
-      { size: "50ml", price: 180 },
-      { size: "100ml", price: 270 },
+      { size: "3ml", price: 120 },
+      { size: "5ml", price: 180 },
+      { size: "10ml", price: 270 },
     ],
   },
   {
@@ -189,9 +189,9 @@ export const FRAGRANCES = [
     occasion: "Spring & Summer",
     image: "/products/bottle-floral.jpg",
     variants: [
-      { size: "30ml", price: 130 },
-      { size: "50ml", price: 190 },
-      { size: "100ml", price: 285 },
+      { size: "3ml", price: 130 },
+      { size: "5ml", price: 190 },
+      { size: "10ml", price: 285 },
     ],
   },
   {
@@ -214,9 +214,9 @@ export const FRAGRANCES = [
     occasion: "Evening & Formal",
     image: "/products/bottle-smoked.jpg",
     variants: [
-      { size: "30ml", price: 155 },
-      { size: "50ml", price: 230 },
-      { size: "100ml", price: 345 },
+      { size: "3ml", price: 155 },
+      { size: "5ml", price: 230 },
+      { size: "10ml", price: 345 },
     ],
   },
   {
@@ -238,9 +238,9 @@ export const FRAGRANCES = [
     occasion: "Romantic & Evening",
     image: "/products/bottle-floral.jpg",
     variants: [
-      { size: "30ml", price: 138 },
-      { size: "50ml", price: 200 },
-      { size: "100ml", price: 300 },
+      { size: "3ml", price: 138 },
+      { size: "5ml", price: 200 },
+      { size: "10ml", price: 300 },
     ],
   },
   {
@@ -262,9 +262,9 @@ export const FRAGRANCES = [
     occasion: "Everyday & Active",
     image: "/products/bottle-cologne.jpg",
     variants: [
-      { size: "30ml", price: 110 },
-      { size: "50ml", price: 165 },
-      { size: "100ml", price: 250 },
+      { size: "3ml", price: 110 },
+      { size: "5ml", price: 165 },
+      { size: "10ml", price: 250 },
     ],
   },
   {
@@ -287,9 +287,9 @@ export const FRAGRANCES = [
     occasion: "Cozy & Evening",
     image: "/products/bottle-amber.jpg",
     variants: [
-      { size: "30ml", price: 150 },
-      { size: "50ml", price: 220 },
-      { size: "100ml", price: 330 },
+      { size: "3ml", price: 150 },
+      { size: "5ml", price: 220 },
+      { size: "10ml", price: 330 },
     ],
   },
   {
@@ -311,9 +311,9 @@ export const FRAGRANCES = [
     occasion: "Everyday Luxury",
     image: "/products/bottle-smoked.jpg",
     variants: [
-      { size: "30ml", price: 142 },
-      { size: "50ml", price: 210 },
-      { size: "100ml", price: 315 },
+      { size: "3ml", price: 142 },
+      { size: "5ml", price: 210 },
+      { size: "10ml", price: 315 },
     ],
   },
 ];
