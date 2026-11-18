@@ -99,9 +99,9 @@ export default function NavDrawer({
               <button
                 type="button"
                 className="nav-drawer-link"
-                onClick={() => navigateCategory("Perfume")}
+                onClick={() => navigateCategory("Male")}
               >
-                <span>Perfumes</span>
+                <span>Male</span>
                 <span className="nav-drawer-arrow">→</span>
               </button>
             </li>
@@ -109,9 +109,9 @@ export default function NavDrawer({
               <button
                 type="button"
                 className="nav-drawer-link"
-                onClick={() => navigateCategory("Cologne")}
+                onClick={() => navigateCategory("Female")}
               >
-                <span>Colognes</span>
+                <span>Female</span>
                 <span className="nav-drawer-arrow">→</span>
               </button>
             </li>
@@ -121,7 +121,7 @@ export default function NavDrawer({
                 className="nav-drawer-link"
                 onClick={() => navigateCategory("Unisex")}
               >
-                <span>Unisex Extraits</span>
+                <span>Unisex</span>
                 <span className="nav-drawer-arrow">→</span>
               </button>
             </li>

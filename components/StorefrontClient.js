@@ -3,7 +3,6 @@
 import { useCallback, useMemo, useState, useSyncExternalStore } from "react";
 import Image from "next/image";
 import {
-  BOTTLE_SIZES,
   CATEGORIES,
   FRAGRANCES,
   STORE_CONFIG,
@@ -109,7 +108,6 @@ function writeWishlist(nextIds) {
 
 export default function StorefrontClient() {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedSizeFilter, setSelectedSizeFilter] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("featured");
 
@@ -121,20 +119,6 @@ export default function StorefrontClient() {
     }
     return initial;
   });
-
-  const handleSizeFilterChange = (size) => {
-    setSelectedSizeFilter(size);
-    if (size === "All") return;
-    setCardSizes((prev) => {
-      const next = { ...prev };
-      for (const item of FRAGRANCES) {
-        if (item.variants.some((v) => v.size === size)) {
-          next[item.id] = size;
-        }
-      }
-      return next;
-    });
-  };
 
   const bagItems = useSyncExternalStore(
     subscribeToBag,
@@ -175,12 +159,6 @@ export default function StorefrontClient() {
       if (selectedCategory !== "All" && item.category !== selectedCategory) {
         return false;
       }
-      if (
-        selectedSizeFilter !== "All" &&
-        !item.variants.some((v) => v.size === selectedSizeFilter)
-      ) {
-        return false;
-      }
       if (!q) return true;
 
       const haystack = [
@@ -218,7 +196,7 @@ export default function StorefrontClient() {
       );
     }
     return list;
-  }, [selectedCategory, selectedSizeFilter, searchQuery, sortBy, cardSizes]);
+  }, [selectedCategory, searchQuery, sortBy, cardSizes]);
 
   const handleAddToBag = (product, size, price) => {
     updateBag((prev) => {
@@ -325,16 +303,16 @@ export default function StorefrontClient() {
               <button
                 type="button"
                 className="nav-link"
-                onClick={() => jumpToCategory("Perfume")}
+                onClick={() => jumpToCategory("Male")}
               >
-                Perfume
+                Male
               </button>
               <button
                 type="button"
                 className="nav-link"
-                onClick={() => jumpToCategory("Cologne")}
+                onClick={() => jumpToCategory("Female")}
               >
-                Cologne
+                Female
               </button>
               <button
                 type="button"
@@ -415,15 +393,17 @@ export default function StorefrontClient() {
         <section className="hero">
           <div className="container hero-grid">
             <div>
-              <p className="hero-eyebrow">Maison Scentora · Fine Fragrances</p>
+              <p className="hero-eyebrow">Scentora Authentic Fragrances</p>
               <h1 className="hero-title">
-                Whispering Aromas, <em>Bottled</em> in Silence.
+                Authentic <em>Designer</em> &amp; Niche Fragrances.
               </h1>
-              <p className="hero-copy">
-                Small-batch perfumes, crisp colognes, and skin-hugging unisex
-                extraits composed with rare botanicals, aged woods, and quiet
-                restraint.
-              </p>
+              <div className="hero-copy">
+                <ul style={{ listStyle: "none", display: "grid", gap: "0.35rem" }}>
+                  <li>• ორიგინალი სუნამოები მილიგრამობით</li>
+                  <li>📦 მიწოდება საქართველოს მასშტაბით</li>
+                  <li>⏰ შეკვეთები 24/7</li>
+                </ul>
+              </div>
               <div className="hero-cta-row">
                 <a href="#collection" className="btn-primary">
                   Explore Collection
@@ -448,8 +428,8 @@ export default function StorefrontClient() {
                   <div className="metric-label">Extrait Concentration</div>
                 </div>
                 <div>
-                  <div className="metric-value">30 / 50 / 100ml</div>
-                  <div className="metric-label">Architectural Flacons</div>
+                  <div className="metric-value">100%</div>
+                  <div className="metric-label">Authentic Fragrances</div>
                 </div>
                 <div>
                   <div className="metric-value">Same-Day</div>
@@ -529,21 +509,6 @@ export default function StorefrontClient() {
                     </button>
                   ))}
                 </div>
-
-                <div className="pill-group" role="group" aria-label="Filter by bottle size">
-                  <span className="pill-group-label">Size</span>
-                  {BOTTLE_SIZES.map((size) => (
-                    <button
-                      key={size}
-                      type="button"
-                      className="filter-pill"
-                      aria-pressed={selectedSizeFilter === size}
-                      onClick={() => handleSizeFilterChange(size)}
-                    >
-                      {size}
-                    </button>
-                  ))}
-                </div>
               </div>
 
               <div className="filter-row">
@@ -604,7 +569,6 @@ export default function StorefrontClient() {
                   className="btn-secondary"
                   onClick={() => {
                     setSelectedCategory("All");
-                    setSelectedSizeFilter("All");
                     setSearchQuery("");
                   }}
                 >
@@ -846,17 +810,17 @@ export default function StorefrontClient() {
                 <li>
                   <a
                     href="#collection"
-                    onClick={() => jumpToCategory("Perfume")}
+                    onClick={() => jumpToCategory("Male")}
                   >
-                    Perfumes
+                    Male
                   </a>
                 </li>
                 <li>
                   <a
                     href="#collection"
-                    onClick={() => jumpToCategory("Cologne")}
+                    onClick={() => jumpToCategory("Female")}
                   >
-                    Colognes
+                    Female
                   </a>
                 </li>
                 <li>
@@ -864,7 +828,7 @@ export default function StorefrontClient() {
                     href="#collection"
                     onClick={() => jumpToCategory("Unisex")}
                   >
-                    Unisex Extraits
+                    Unisex
                   </a>
                 </li>
               </ul>

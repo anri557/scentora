@@ -16,7 +16,7 @@ export const STORE_CONFIG = {
   freeShippingThreshold: 250,
 };
 
-export const CATEGORIES = ["All", "Perfume", "Cologne", "Unisex"];
+export const CATEGORIES = ["All", "Male", "Female", "Unisex"];
 export const BOTTLE_SIZES = ["All", "30ml", "50ml", "100ml"];
 
 export const FRAGRANCES = [
@@ -50,7 +50,7 @@ export const FRAGRANCES = [
     slug: "blanc-de-neroli",
     name: "Blanc de Néroli",
     subtitle: "Eau de Cologne",
-    category: "Cologne",
+    category: "Male",
     scentFamily: "Fresh",
     badge: "Bestseller",
     description:
@@ -75,7 +75,7 @@ export const FRAGRANCES = [
     slug: "rose-silencieuse",
     name: "Rose Silencieuse",
     subtitle: "Eau de Parfum",
-    category: "Perfume",
+    category: "Female",
     scentFamily: "Floral",
     badge: "New",
     description:
@@ -125,7 +125,7 @@ export const FRAGRANCES = [
     slug: "ambre-dore",
     name: "Ambre Doré",
     subtitle: "Eau de Parfum",
-    category: "Perfume",
+    category: "Female",
     scentFamily: "Oriental",
     badge: "Bestseller",
     description:
@@ -150,7 +150,7 @@ export const FRAGRANCES = [
     slug: "cedre-imperial",
     name: "Cèdre Impérial",
     subtitle: "Eau de Cologne",
-    category: "Cologne",
+    category: "Male",
     scentFamily: "Woody",
     description:
       "Crisp Atlas cedarwood, crushed juniper berry, and cold-pressed grapefruit over a dry mineral oakmoss base.",
@@ -199,7 +199,7 @@ export const FRAGRANCES = [
     slug: "cuir-fumee",
     name: "Cuir Fumée",
     subtitle: "Extrait de Parfum",
-    category: "Cologne",
+    category: "Male",
     scentFamily: "Woody",
     badge: "Signature",
     description:
@@ -224,7 +224,7 @@ export const FRAGRANCES = [
     slug: "jasmin-de-nuit",
     name: "Jasmin de Nuit",
     subtitle: "Eau de Parfum",
-    category: "Perfume",
+    category: "Female",
     scentFamily: "Floral",
     description:
       "Intoxicating night-blooming jasmine and creamy tuberose grounded by warm sandalwood and white honey.",
@@ -248,7 +248,7 @@ export const FRAGRANCES = [
     slug: "bergamote-mineral",
     name: "Bergamote Minéral",
     subtitle: "Eau de Cologne",
-    category: "Cologne",
+    category: "Male",
     scentFamily: "Fresh",
     description:
       "Sparkling Calabrian bergamot, sea salt spray, and crisp ginger root drying down to clean driftwood.",
@@ -297,7 +297,7 @@ export const FRAGRANCES = [
     slug: "iris-cachemire",
     name: "Iris Cachemire",
     subtitle: "Eau de Parfum",
-    category: "Perfume",
+    category: "Female",
     scentFamily: "Floral",
     description:
       "Powdery Florentine iris root, soft heliotrope, and clean almond milk resting on a veil of white suede.",
