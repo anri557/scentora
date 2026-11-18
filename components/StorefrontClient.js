@@ -2,6 +2,7 @@
 
 import { useCallback, useMemo, useState, useSyncExternalStore } from "react";
 import Image from "next/image";
+import { LuClock, LuPackage, LuSparkles } from "react-icons/lu";
 import {
   CATEGORIES,
   FRAGRANCES,
@@ -398,10 +399,31 @@ export default function StorefrontClient() {
                 Authentic <em>Designer</em> &amp; Niche Fragrances.
               </h1>
               <div className="hero-copy">
-                <ul style={{ listStyle: "none", display: "grid", gap: "0.35rem" }}>
-                  <li>• ორიგინალი სუნამოები მილიგრამობით</li>
-                  <li>📦 მიწოდება საქართველოს მასშტაბით</li>
-                  <li>⏰ შეკვეთები 24/7</li>
+                <ul style={{ listStyle: "none", display: "grid", gap: "0.5rem" }}>
+                  <li style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                    <LuSparkles
+                      size={16}
+                      style={{ color: "var(--accent-gold)", flexShrink: 0 }}
+                      aria-hidden="true"
+                    />
+                    <span>Original fragrances by the milliliter</span>
+                  </li>
+                  <li style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                    <LuPackage
+                      size={16}
+                      style={{ color: "var(--accent-gold)", flexShrink: 0 }}
+                      aria-hidden="true"
+                    />
+                    <span>Nationwide delivery across Georgia</span>
+                  </li>
+                  <li style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                    <LuClock
+                      size={16}
+                      style={{ color: "var(--accent-gold)", flexShrink: 0 }}
+                      aria-hidden="true"
+                    />
+                    <span>Orders accepted 24/7</span>
+                  </li>
                 </ul>
               </div>
               <div className="hero-cta-row">
@@ -828,9 +850,37 @@ export default function StorefrontClient() {
               <div className="footer-heading">Concierge</div>
               <ul className="footer-list">
                 <li>{STORE_CONFIG.location}</li>
-                <li>{STORE_CONFIG.email}</li>
-                <li>Instagram: {STORE_CONFIG.instagramHandle}</li>
+                <li>
+                  <a href={`tel:+${STORE_CONFIG.whatsappNumber}`}>
+                    {STORE_CONFIG.phoneDisplay}
+                  </a>
+                </li>
                 <li>Daily Delivery · 10:00 – 21:00</li>
+                <li style={{ paddingTop: "0.25rem" }}>
+                  <a
+                    href={STORE_CONFIG.instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Scentora on Instagram"
+                    style={{ display: "inline-flex", alignItems: "center" }}
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

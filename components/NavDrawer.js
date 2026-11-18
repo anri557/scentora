@@ -174,9 +174,44 @@ export default function NavDrawer({
         </nav>
 
         <div className="bag-footer">
-          <div style={{ fontSize: "0.8rem", color: "var(--ink-secondary)" }}>
-            <div>{STORE_CONFIG.location}</div>
-            <div>{STORE_CONFIG.email}</div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              fontSize: "0.82rem",
+              color: "var(--ink-secondary)",
+            }}
+          >
+            <div>
+              <div>{STORE_CONFIG.location}</div>
+              <a href={`tel:+${STORE_CONFIG.whatsappNumber}`}>
+                {STORE_CONFIG.phoneDisplay}
+              </a>
+            </div>
+            <a
+              href={STORE_CONFIG.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Scentora on Instagram"
+              style={{ display: "inline-flex", alignItems: "center" }}
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

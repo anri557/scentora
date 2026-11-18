@@ -9,9 +9,9 @@ export const STORE_CONFIG = {
   tagline: "Whispering Aromas",
   currencySymbol: "₾",
   currencyCode: "GEL",
-  whatsappNumber: "995555000000", // Replace with the business owner's WhatsApp number (country code + digits, no +)
-  instagramHandle: "@scentora.perfumes",
-  email: "concierge@scentora.ge",
+  whatsappNumber: "995510002377",
+  phoneDisplay: "+995 510 002 377",
+  instagramUrl: "https://www.instagram.com/scent_georgia/?hl=en",
   location: "Tbilisi, Georgia",
   freeShippingThreshold: 250,
 };
