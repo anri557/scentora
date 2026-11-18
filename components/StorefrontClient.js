@@ -3,6 +3,7 @@
 import { useCallback, useMemo, useState, useSyncExternalStore } from "react";
 import Image from "next/image";
 import { LuClock, LuPackage, LuSparkles } from "react-icons/lu";
+import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa6";
 import {
   CATEGORIES,
   FRAGRANCES,
@@ -852,7 +853,7 @@ export default function StorefrontClient() {
                   </a>
                 </li>
                 <li>Daily Delivery · 10:00 – 21:00</li>
-                <li style={{ paddingTop: "0.25rem" }}>
+                <li style={{ paddingTop: "0.35rem", display: "flex", alignItems: "center", gap: "1rem" }}>
                   <a
                     href={STORE_CONFIG.instagramUrl}
                     target="_blank"
@@ -860,21 +861,34 @@ export default function StorefrontClient() {
                     aria-label="Scentora on Instagram"
                     style={{ display: "inline-flex", alignItems: "center" }}
                   >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.75"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                    </svg>
+                    <FaInstagram size={18} aria-hidden="true" />
+                  </a>
+                  <a
+                    href={STORE_CONFIG.facebookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Scentora on Facebook"
+                    style={{ display: "inline-flex", alignItems: "center" }}
+                  >
+                    <FaFacebookF size={17} aria-hidden="true" />
+                  </a>
+                  <a
+                    href={STORE_CONFIG.tiktokUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Scentora on TikTok"
+                    style={{ display: "inline-flex", alignItems: "center" }}
+                  >
+                    <FaTiktok size={17} aria-hidden="true" />
+                  </a>
+                  <a
+                    href={`https://wa.me/${STORE_CONFIG.whatsappNumber}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Scentora on WhatsApp"
+                    style={{ display: "inline-flex", alignItems: "center" }}
+                  >
+                    <FaWhatsapp size={19} aria-hidden="true" />
                   </a>
                 </li>
               </ul>

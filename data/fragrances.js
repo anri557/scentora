@@ -12,6 +12,8 @@ export const STORE_CONFIG = {
   whatsappNumber: "995510002377",
   phoneDisplay: "+995 510 002 377",
   instagramUrl: "https://www.instagram.com/scent_georgia/?hl=en",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61568418431362",
+  tiktokUrl: "https://www.tiktok.com/@scentora.official",
   location: "Tbilisi, Georgia",
   freeShippingThreshold: 250,
 };

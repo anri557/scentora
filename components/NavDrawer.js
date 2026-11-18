@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef } from "react";
+import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa6";
 import { STORE_CONFIG } from "@/data/fragrances";
 import { closeDialogWithAnimation } from "./dialogUtils";
 
@@ -189,29 +190,44 @@ export default function NavDrawer({
                 {STORE_CONFIG.phoneDisplay}
               </a>
             </div>
-            <a
-              href={STORE_CONFIG.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Scentora on Instagram"
-              style={{ display: "inline-flex", alignItems: "center" }}
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
+            <div style={{ display: "flex", alignItems: "center", gap: "0.85rem" }}>
+              <a
+                href={STORE_CONFIG.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Scentora on Instagram"
+                style={{ display: "inline-flex", alignItems: "center" }}
               >
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-              </svg>
-            </a>
+                <FaInstagram size={17} aria-hidden="true" />
+              </a>
+              <a
+                href={STORE_CONFIG.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Scentora on Facebook"
+                style={{ display: "inline-flex", alignItems: "center" }}
+              >
+                <FaFacebookF size={16} aria-hidden="true" />
+              </a>
+              <a
+                href={STORE_CONFIG.tiktokUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Scentora on TikTok"
+                style={{ display: "inline-flex", alignItems: "center" }}
+              >
+                <FaTiktok size={16} aria-hidden="true" />
+              </a>
+              <a
+                href={`https://wa.me/${STORE_CONFIG.whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Scentora on WhatsApp"
+                style={{ display: "inline-flex", alignItems: "center" }}
+              >
+                <FaWhatsapp size={18} aria-hidden="true" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
